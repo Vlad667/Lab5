@@ -25,6 +25,7 @@ int main(){
 		printf("%3d", mas[i][j]);
 		printf("\n");
 	}
+	
 	system("pause");
 	return 0;
 } 
