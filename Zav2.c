@@ -4,25 +4,29 @@
 int main(){
 	
 	int mas[100][100];
-    int i, j, razmer;
+    int x, y, razmer;
 	
 	printf("Vvedite razmer = ");
 	scanf("%d", &razmer);
 	
-	for(i=0;i<razmer;i++){
-	for (j=0;j<razmer;j++){
-	if(i>=j){
-	mas[i][j]=1;
+	for(x=0;x<razmer;x++)
+	{
+	for (y=0;y<razmer;y++)
+	{
+	if(x>=y)
+	{
+	mas[x][y]=1;
 	} else {
-	mas[i][j] = 0;
+	mas[x][y] = 0;
 	}
 	}
 	}
 
 	
-	for(i=0;i<razmer;i++){
-		for(j=0;j<razmer;j++)
-		printf("%3d", mas[i][j]);
+	for(x=0;x<razmer;x++)
+	{
+		for(y=0;y<razmer;y++)
+		printf("%3d", mas[x][y]);
 		printf("\n");
 	}
 	system("pause");
